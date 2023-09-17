@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-image: url(./Schoolyard\ kids\ 2.png);
+  height: 80%;
+  /* width: 100%; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  margin-top: 18px;
+}
+
+.tag{
+  display: flex;
+}
+
+.tagline {
+   height: 130px;
+   width: 180px;
+   margin: -100px 0px 0px 150px;
+   border: 10px solid none ;
+}
+
+.tag h4{
+   margin-top: -47px;
+   margin-left: -45px;
+   font-size: 30px;
+   color:  rgba(190, 100, 21, 0.911);
+   font-family:cursive;
+   font-style: italic;
+}  
+header nav{
+  display: flex;
+  margin: 0px 0px 0px 70px;
+
+}
+
+nav img {
+  height: 60px;
+  width: 60px;
+  margin-top: 2px;
+}
+
+nav ul {
+  display: flex;
+  margin-top: 35px;
+  padding-left: 10px;
+  list-style: none;
+  background-color: none;
+  font-size: large;
+  font-weight: 700;
+}
+
+nav ul li {
+  /* justify-content:space-between ;
+   */
+   padding: 0px 20px;
+   margin-top: -0.5px;
+}
+
+
+
+
+nav a {
+  text-decoration: none;
+  color: rgb(201, 105, 3);
+}
+
+nav ul a:hover{
+  background-color: rgba(22, 181, 187, 0.804);
+  /* height: 85px;
+  width: 100px; */
+  font-size: larger;
+  text-transform: ease-out;
+  transition-delay: 5sec;
+  /* border-radius: 5px; */
+  height: 60px;
+  width: 200px;
+  /* border-style: double; */
+  border-color: black;
+  text-orientation: sideways-right;
+}
+
+nav img:hover {
+  background-color: rgba(232, 66, 116, 0.6);
+  transition-delay: 5sec;
+  border-radius: 5px;
+  height: 55px;
+  width: 55px;
+  border-style: double;
+  border-color: black;
+  text-orientation: sideways-right;
+}
+
+#checkbtn{
+  float: left;
+  line-height: 10px;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+  main{
+    margin: 30px 0px 0px 55px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  main h2 {
+    font-size: 35px;
+    font-weight: 600;
+    font-style: oblique;
+    color: rgba(113, 228, 51, 0.884);
+  }
+
+  main p {
+    margin-top: 30px;
+    padding-left: 100px;
+    font-size: 20px;
+  }
+
+  main  h3{
+    margin-top: 22px;
+    font-size: 24px;
+    /* color: rgba(52, 161, 212, 0.92); */
+  }
+  main ul {
+    font-size: 20px;
+  }
+
+  main  ul li {
+    list-style-type: disc;
+    /* width: 50px; */
+    margin: 10px 0px 0px 30px;
+  }
+
+  footer {
+    display: flex;
+    background-color: rgba(114, 111, 111, 0.578);
+    width: 100%;
+    height: 40px;
+    margin-top: 10%;
+  }
+
+.left{
+    display: flex;
+  }
+
+  .left p {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.836);
+  }
+
+  .left img {
+    height: 40px;
+    margin-left: 15px;
+    padding-left: 20px;
+  }
+
+  .right {
+    display: flex;
+    padding-left: 35%;
+  }
+
+  .right p {
+     padding-top: 15px;
+     padding-left: 25px;
+  }
+
+  @media (max-width:700px) {
+
+    body{
+      width: 750px;
+    }
+  
+    .top{
+      height: 130px;
+      width: 650px;
+      margin: 10px 0px 0px 10px;
+  }
+  
+    .head {
+      width: 1000px;
+      height: 180px;
+    }
+    #check{
+      display: block;
+      visibility: hidden;
+    }
+  
+    input[type=checkbox] {
+      display: block;
+    }
+    #checkbtn{
+      display: block;
+      border-radius: 5px;
+      width: 140px;
+      height: 130px;
+      margin: 18px 0px 0px 25px;
+      padding: 15px 10px 10px 30px;
+      background-color: rgba(47, 187, 175, 0.247);
+      /* backdrop-filter: bulr(12px); */
+      
+    }
+  
+    .menu nav ul{
+      display: block;
+      margin: -10px 10px 10px -420px;
+      line-height: 70px;
+      border-radius: 8px;
+      background-color: rgba(69, 177, 177, 0.183);
+      width: 200;
+      height: 100 ;
+      box-shadow: 2px 5px 2px 5px #025d49;
+      overflow: hidden;
+      z-index: 1;
+    }
+  
+    .menu nav ul li a {
+      /* transition: 1s ease-out; */
+      color: rgb(201, 105, 3);
+      font-size: 20px;
+    }
+  
+    input[type=checkbox]:checked ~  nav ul {
+      width: 380px;
+      margin: 180px 10px 10px -178px;
+      text-align: center;
+      transition: 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      
+    }
+      main{
+        margin-top: -370px;
+        /* position: absolute; */
+      }
+
+      footer {
+        display: block;
+        height: 200px;
+        padding-left: 40px;
+        text-align: center;
+   }
+  
+   .left {
+    padding-left: -20px;
+     display: block;
+     font-size: 22px;
+   }
+  
+   .left img {
+       height: 60px;
+       width: 75px;
+   }
+  
+   .left p {
+     /* padding-left: 18px; */
+     font-size: 20px;
+   }
+  
+   .right {
+     display: block;
+     margin-left: -300px;
+     text-align: center;
+     font-size: 22px;
+   }
+   }
